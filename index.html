@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap");
+      #g {
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
+    </style>
+    <!-- tailwind and daisy  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom styles  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              colBlack: "#111",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body id="g" class="container mx-auto">
+    <header class="text-center my-5">
+      <h1 class="text-5xl font-semibold text-colBlack">AI Universe Hub</h1>
+      <button class="btn btn-xs btn-error mt-2 sm:btn-sm md:btn-md lg:btn-lg">
+        Sort by date
+      </button>
+    </header>
+    <main>
+      <section>
+        <div
+          id="main-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        ></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="style.js"></script>
+  </body>
+</html>
